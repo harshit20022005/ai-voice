@@ -15,8 +15,6 @@ from battery_plug_check import *
 from caption_in_video import *
 from play_music_in_youtube import *
 from search_in_youtube import *
-from check_online_offline_status import * 
-
 
 def speechtx(text):
     tts = gTTS(text=text, lang='en')
@@ -76,9 +74,6 @@ if __name__ == "__main__":
 
         elif 'play on YouTube' in command:
             play_music_on_youtube()
-
-        elif 'internet status' in command:
-            internet_status()
 
         elif 'shutdown' in command:
             speechtx("Goodbye!")
